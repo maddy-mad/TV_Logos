@@ -1,4 +1,4 @@
-# TV Channel Logos
+# TV Channel Logo
 TV Channel Logos in High Quality .png format (w376 x h288)
 
 
