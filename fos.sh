@@ -1,13 +1,4 @@
 #!/bin/bash
-# FUNCTION: ERROR
-error(){
-    sleep 2
-    echo -ne '\n'"--PROBLEM!--"
-    echo -ne '\n'"Support: https://github.com/vaniusha3/IPTV-MD" '\n'
-exit
-}
-
-
 # FUNCTION: FOS-Streaming Exist
 fosstreamingexist() {
     if [ -d "/home/fos-streaming" ]; then
