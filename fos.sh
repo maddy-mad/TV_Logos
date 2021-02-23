@@ -1,4 +1,28 @@
 #!/bin/bash
+
+# FUNCTION: Ubuntu 16.04 Check
+distro(){
+if [ -f /etc/lsb-release ]; then
+    . /etc/lsb-release
+        if [ $DISTRIB_ID == Ubuntu ]; then
+            if [ $DISTRIB_RELEASE != "18.04" ]; then
+                error
+            fi
+        else
+            error
+        fi
+fi
+}
+
+# FUNCTION: ERROR
+error(){
+    sleep 2
+    echo -ne '\n'"--PROBLEM!--"
+    echo -ne '\n'"Support: https://github.com/vaniusha3/IPTV-MD" '\n'
+exit
+}
+
+
 # FUNCTION: FOS-Streaming Exist
 fosstreamingexist() {
     if [ -d "/home/fos-streaming" ]; then
